@@ -1,8 +1,8 @@
-#ubuntu commands
-# create a separate environment using python-env
-# install flask, sqlalchemy, requests
+# ubuntu commands
+## create a separate environment using python-env
+## install flask, sqlalchemy, requests
 
-#activating server
+### activating server
 
 cd AP086
 
