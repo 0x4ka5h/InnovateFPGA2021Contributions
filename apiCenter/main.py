@@ -9,6 +9,6 @@ main = Blueprint('main', __name__)
 @main.route('/')
 def home():
     try:
-        return jsonify({"login":current_user.username,"message":" testing under AP093"})
+        return jsonify({"login":current_user.username,"message":" testing under AP086"})
     except:
-        return jsonify({"login":"-----","message":" testing under AP061_78"})
+        return jsonify({"login":"-----","message":" testing under AP086"})

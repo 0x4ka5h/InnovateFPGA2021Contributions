@@ -28,17 +28,12 @@ def create_app():
     from .authentication import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)
 
-    # home route and vehicleStatus route
+    from apiCenter.testingDetails.processingData import data
+    app.register_blueprint(data)
+
+
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
-
-    ##########################    ownerSide        ###############################
-
-    from apiCenter.ownerSide.apiGpsToOwner import ownerGPSauth
-    app.register_blueprint(ownerGPSauth)
-    from apiCenter.onRequests.cameraStream import cameraStreamauth
-    app.register_blueprint(cameraStreamauth)
-
 
     return app
 
